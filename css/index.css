@@ -1,3 +1,97 @@
-body{
-    background-color:url('../images/images.jpeg');
+html,body{
+    height: 100%;;
 }
+
+
+.first {
+    height:100vh;
+    min-height:400px;
+    /*background-size:cover;*/
+    background-image:url('../images/apple.jpg');
+  }
+
+.affix {
+    -webkit-transition:padding 0.2s ease-out;
+    -moz-transition:padding 0.2s ease-out;  
+    -o-transition:padding 0.2s ease-out;         
+    transition:padding 0.2s ease-out;
+  
+  }
+  
+  @media (min-width:768px) {
+      .affix-top {
+        /* navbar style at top */
+        background:transparent;
+        border-color:transparent;
+        padding: 15px;
+        -webkit-transition:all 0.5s ease;
+        -moz-transition:all 0.5s ease; 
+        -o-transition:all 0.5s ease;         
+        transition:all 0.5s ease;  
+      }
+  }
+
+  @media (min-width: 481px){
+  
+  }
+  
+  .affix-top .nav>li>a {
+     color: white;
+     padding-right: 10px;
+     font-size: 1.2em;
+  }
+  
+  .nav{
+     /* margin-left:-45%;*/
+  }
+  .affix-top.navbar .nav>li>a:hover,
+  .affix-top.navbar .navbar-brand
+  {
+     color: white;
+  }
+  
+  section {
+    height:calc(90% - 50px);
+    height: 90vh;
+  }
+  
+  @media (min-width: 768px)
+  {
+    .navbar-nav>li {
+        float: left;
+        padding-right: 47px;
+    }
+  }
+
+
+  /*nav.shrink{
+      background-color: rgba(0,0,0,0.5);
+      height: 60px;
+      padding-top: 5px;
+  }
+
+  nav.shrink.navbar-logo{
+      font-size: 20px;
+      padding:30px 0px 0x 80px;
+      color: white;
+  }
+
+  nav.shrink>li>a{
+      color: white;font-size: 16px;
+      font-family: heading-text;
+      padding-top:30px; 
+  }*/
+
+  
+  .home:hover ~ hr{
+      margin-left: 25%;
+  }
+
+  hr {
+    height: .25rem;
+    width: 25%;
+    margin: 0;
+    background: tomato;
+    border: none;
+    transition: .3s ease-in-out;
+  }
