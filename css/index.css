@@ -18,21 +18,48 @@ html,body{
   
   }
   
-  @media (min-width:768px) {
-      .affix-top {
-        /* navbar style at top */
-        background:transparent;
-        border-color:transparent;
-        padding: 15px;
-        -webkit-transition:all 0.5s ease;
-        -moz-transition:all 0.5s ease; 
-        -o-transition:all 0.5s ease;         
-        transition:all 0.5s ease;  
-      }
-  }
+  .navbar-inverse {
+    background-color: none !important;
+    border-color: none !important;
+}
 
-  @media (min-width: 481px){
-  
+.navbar-default {
+    background-color: none !important;
+    /*border-color: none !important;*/
+}
+
+button .navbar-toggle{
+    background: none;
+    color: white;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #ddd !important;
+    
+}
+
+.navbar-default{
+    border-top: .1px solid white;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+     border-color: white !important;
+}
+
+.navbar-inverse .navbar-toggle:hover {
+    background-color: #234b5e !important;
+}
+
+
+.affix-top {
+    /* navbar style at top */
+    background:transparent;
+    border-color:transparent;
+    padding: 15px;
+    -webkit-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease; 
+    -o-transition:all 0.5s ease;         
+    transition:all 0.5s ease;  
   }
   
   .affix-top .nav>li>a {
@@ -95,3 +122,23 @@ html,body{
     border: none;
     transition: .3s ease-in-out;
   }
+.first{
+    display: table;
+    width: 100%;
+    background-size: cover;
+}
+
+.landing-text{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+ 
+}
+
+.btn-default {
+    color: #8fd1de !important;
+    background-color: #3a798f !important;
+    border-color: #51a1b7 !important;
+}
+
