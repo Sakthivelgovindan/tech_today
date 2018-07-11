@@ -1,5 +1,5 @@
 html,body{
-    height: 100%;;
+    height: 100%;
 }
 
 
@@ -68,9 +68,7 @@ button .navbar-toggle{
      font-size: 1.2em;
   }
   
-  .nav{
-     /* margin-left:-45%;*/
-  }
+  
   .affix-top.navbar .nav>li>a:hover,
   .affix-top.navbar .navbar-brand
   {
@@ -81,17 +79,136 @@ button .navbar-toggle{
     height:calc(90% - 50px);
     height: 90vh;
   }
+
+  .home:hover ~ hr{
+    margin-left: 25%;
+}
+
+hr {
+  height: .25rem;
+  width: 25%;
+  margin: 0;
+  background: tomato;
+  border: none;
+  transition: .3s ease-in-out;
+}
+.first{
+  display: table;
+  width: 100%;
+  background-size: cover;
+}
+.second{
+  display: table;
+  width: 100%;
+}
+
+.landing-text{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+
+}
+
+.btn-default {
+  color: #8fd1de !important;
+  background-color: #3a798f !important;
+  border-color: #51a1b7 !important;
+}
+
+.actively{
+  border-bottom: 1px solid white;
+  text-align: center;
+}
+
+.downArrow{
+  position: fixed;
+  bottom: 20%;
+  left: 49%;
+}
+.downArrow img{
+  height: 20px;
+}
+.bounce {
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
+}
+
+@-moz-keyframes bounce {
+0%, 20%, 50%, 80%, 100% {
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+}
+40% {
+  -moz-transform: translateY(-30px);
+  transform: translateY(-30px);
+}
+60% {
+  -moz-transform: translateY(-15px);
+  transform: translateY(-15px);
+}
+}
+@-webkit-keyframes bounce {
+0%, 20%, 50%, 80%, 100% {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+40% {
+  -webkit-transform: translateY(-30px);
+  transform: translateY(-30px);
+}
+60% {
+  -webkit-transform: translateY(-15px);
+  transform: translateY(-15px);
+}
+}
+@keyframes bounce {
+0%, 20%, 50%, 80%, 100% {
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+40% {
+  -moz-transform: translateY(-30px);
+  -ms-transform: translateY(-30px);
+  -webkit-transform: translateY(-30px);
+  transform: translateY(-30px);
+}
+60% {
+  -moz-transform: translateY(-15px);
+  -ms-transform: translateY(-15px);
+  -webkit-transform: translateY(-15px);
+  transform: translateY(-15px);
+}
+}
+h1{
+    text-align: center;
+}
+
   
-  @media (min-width: 768px)
-  {
+@media screen and (max-width:640px){
     .navbar-nav>li {
         float: left;
-        padding-right: 47px;
+        padding-right: 25px;
+    }
+    .downArrow{
+      position: fixed;
+      bottom: 20%;
+      left: 45%;
+    }
+  }
+  @media screen and (max-width:320px){
+    .downArrow{
+        position: fixed;
+        bottom: 20%;
+        left: 45%;
     }
   }
 
 
-  /*nav.shrink{
+  nav.shrink{
       background-color: rgba(0,0,0,0.5);
       height: 60px;
       padding-top: 5px;
@@ -104,41 +221,10 @@ button .navbar-toggle{
   }
 
   nav.shrink>li>a{
-      color: white;font-size: 16px;
+      /*color: white;font-size: 16px;*/
       font-family: heading-text;
       padding-top:30px; 
-  }*/
+  }
 
   
-  .home:hover ~ hr{
-      margin-left: 25%;
-  }
-
-  hr {
-    height: .25rem;
-    width: 25%;
-    margin: 0;
-    background: tomato;
-    border: none;
-    transition: .3s ease-in-out;
-  }
-.first{
-    display: table;
-    width: 100%;
-    background-size: cover;
-}
-
-.landing-text{
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    color: white;
  
-}
-
-.btn-default {
-    color: #8fd1de !important;
-    background-color: #3a798f !important;
-    border-color: #51a1b7 !important;
-}
-
